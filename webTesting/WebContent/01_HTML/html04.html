@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2> text type</h2>
+	<input type="text" name="id"/>
+	<br/>
+	
+	<h2> password type</h2>
+	<input type="password" name="pwd"/> <!-- name속성은 서버에서 필요한 식별자(변수) -->
+	<br/>
+	
+	<h2> hidden type</h2>	<!-- 사용자에게 보여주지않는 -->
+	<input type = "hidden" name="num" value="1234"/> <!-- hidden 서버에 데이터를 전송할때  -->
+	<br/>
+	
+	<h2>radio type</h2>										<!-- name = gender(공통)  value 값전달 -->
+	<input type="radio" name="gender" value="woman"/>
+	<span>남자</span>
+	
+	<input type="radio" name="gender" value="man"/>
+	<span>여자</span>
+	<br/>
+	
+	<h2>checkbox type</h2>
+	<input type="checkbox" name="subject" value="java"/> <!-- 배열처리해서 값을받아옴  체크된값부터 인덱스번호-->
+	<span>자바</span>
+	
+	<input type="checkbox" name="subject" value="C"/>
+	<span>C언어</span>
+	
+	<input type="checkbox" name="subject" value="phyton"/>
+	<span>파이썬</span>
+	
+	<input type="checkbox" name="subject" value="iphone"/>
+	<span>아이폰</span>
+	<br/><br/>
+											<!-- text(데이터값)를 데이터를 던져주는걸 잘하면 바이너리(이진파일)로 던져주는작업도 하기편함 -->
+	<h3>file type</h3>	
+	<input type="file" name="upload"/>
+	<br/><br/>
+													
+	<h3>Color Type</h3>												
+				<input type="color" name="sColor"/>									
+	<br/><br/>
+	<h3>Date Type</h3>								
+				<input type="date" name="sDate">
+	<br/><br/>
+				
+	<h3>버튼 종류</h3>											
+	<input type="button" value="로그인"/> <!-- 이벤트 핸들러(javaScript) 작업 해야된다 -->
+	<input type="reset" value="취소"/>  <!-- FORM 태그에서 자동이벤트 처리 -->
+	<input type="submit" value="전송"/> <!-- FORM 태그에서 자동이벤트처리 -->
+	<br/>
+												<!-- From태그에서 묶어서 보내주는 -->
+	<h3>select</h3>
+	<select name="fruit"> 
+	<option value="apple"> 사과 </option>
+	<option value="banana"> 바나나 </option>
+	<option value="pineapple"> 파인애플</option>
+	</select>
+	<br/><br/>
+	
+	<select name="fruit2" multiple="multiple">
+	<option value="apple">사과</option>
+	<option value="banana">바나나</option>
+	<option value="pineapple">파인애플</option>
+	<option value="melon">메론</option>
+	</select>
+	<br/><br/>
+	
+	<h3>text Area</h3>
+	<textarea rows="10" cols="50" name="contacts"></textarea>
+	
+</body>
+</html>

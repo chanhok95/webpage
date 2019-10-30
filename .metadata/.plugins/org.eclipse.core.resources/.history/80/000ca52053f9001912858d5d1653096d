@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Homepage</title>
+</head>
+<body>
+	<h3>회원 관리</h3>
+	<a href="http://localhost:8181/homepage/member/register.do">회원가입</a>&nbsp;&nbsp;
+	<a href="">로그인</a>&nbsp;&nbsp;
+	<a href="">로그아웃</a>&nbsp;&nbsp;
+	
+	
+<!-- 	<h3>게시판</h3>
+	<h3>방명록</h3>
+	<h3>파일게시판</h3> -->
+</body>
+</html>

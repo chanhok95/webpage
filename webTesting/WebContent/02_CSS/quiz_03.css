@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.title{
+	border: solid 2px black;
+	width: 500px;
+	height: 256px;
+}
+.sun{
+	border: solid 2px black;
+	width: 156px;
+	float: left;
+	border-bottom:0px;
+	border-right:0px;
+	border-left:0px;
+	border-left:0px;
+	
+	 
+}
+.sub{
+	border: solid 1px black;
+	width: 342px;
+	float: left;
+	text-align: left;
+}

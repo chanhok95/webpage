@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #333333;
+}
+
+.gnb {
+	text-align: center;
+	height: 30px;
+	line-height: 0px;
+	background-color: #f0f0f0;
+}
+.type{
+	margin-top: -6px;
+	height: 30px;
+	margin-left: -12px; 
+}
+.type > input{
+	 width: 270px; margin-right: 90px; height: 34px; border-top: 0px; border-bottom: 0px; border-right: 0px;
+}
+
+#headermenu {
+	float: left;
+	margin-left: 450px;
+}
+
+#submenu {
+	margin-left: 350px;
+	margin-right: 230px;
+}
+
+#headermenu, #submenu {
+	display: inline-block;
+}
+
+#headermenu>li {
+	display: inline-block;
+}
+
+.clearfix>a {
+	border: solid 0px red;
+	float: left;
+	position: absolute;
+	margin-left: -510px;
+	margin-top: -20px;
+	line-height: 125px;
+	color: white;
+	width: 105px; height: 100px; background: url(//static.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png) no-repeat 0px 0px;
+}
+
+
+
+aside{
+	border: solid;
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	margin-left: 1566px;
+	margin-top: 52px;
+	
+}
+
+
+
+#submenu>li {
+	display: inline-block;
+}
+
+.clearfix {
+	text-align: center;
+}
+
+.clearfix img {
+	float: left;
+	margin-left: 600px;
+}
+
+.search_clearfix .search {
+	margin-bottom: 35px;
+	float: left;
+	text-align: left;
+	width: 100px;
+}
+
+.link li {
+	border: solid 2px white;
+	display: inline-block;
+	font-size: 20px;
+	margin-right: 30px;
+}
+
+h2 {
+	text-align: center;
+	margin-right: 900px;
+}
+
+fieldset {
+	border: solid 1px blue;
+	width: 500px;
+	height: 20px;
+	float: left;
+	margin-left: 10px;
+}
+
+search_clearfix {
+	width: 518px;
+}
+
+.list {
+	border: solid 2px #d6d6d6;
+	margin: 0px auto;
+	width: 980px;
+	padding: 10px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.list div:nth-child(1) {
+	border: solid 2px #d6d6d6;
+	width: 480px;
+	height: 200px;
+	float: left;
+}
+
+.list div:nth-child(2) {
+	border: solid 2px #d6d6d6;
+	width: 480px;
+	height: 200px;
+	margin-left: 495px;
+}
+
+.list div:nth-child(3) {
+	border: solid 2px #d6d6d6;
+	width: 233px;
+	height: 300px;
+	float: left;
+	margin-top: 10px;
+}
+
+.list div:nth-child(4) {
+	border: solid 2px #d6d6d6;
+	width: 233px;
+	height: 300px;
+	margin-top: 10px;
+	float: left;
+	margin-left: 10px;
+}
+
+.list div:nth-child(5) {
+	border: solid 2px #d6d6d6;
+	width: 233px;
+	height: 300px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.list div:nth-child(6) {
+	border: solid 2px #d6d6d6;
+	width: 233px;
+	height: 300px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.list div:nth-child(7) {
+	border: solid 2px #d6d6d6;
+	width: 480px;
+	height: 200px;
+	float: left;
+	margin-top: 10px;
+}
+
+.list div:nth-child(8) {
+	border: solid 2px #d6d6d6;
+	width: 233px;
+	height: 200px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.list div:nth-child(9) {
+	border: solid 2px #d6d6d6;
+	width: 233px;
+	height: 200px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="07_Formjavascript.js"></script>
+</head>
+<body>
+<form action="http://www.naver.com" method="get" onsubmit="return checkForm(this)"> <!-- www.naver.com -> get -> checkForm()  체크폼안썻을시 바로 데이터 전송  -->
+		<label>이름을 입력하세요.</label>									<!-- 기본값 return:true -->
+		<input type="text" name="irum" />
+		<br/><br/>
+	
+		<label>이동할 사이트 선택</label>
+		<select name="siteurl">
+		<option></option>
+		<option value="https://www.naver.com">네이버</option>
+		<option value="https://www.daum.com">다음</option>
+		<option value="https://www.nate.com">네이트</option>
+		</select>
+		<br/><br/>
+		<label>좋아하는 과일 선택</label>
+		<br/><br/>
+		<input type="radio" name="fruit" value="바나나" />
+		<label>바나나</label>
+		<input type="radio" name="fruit" value="사과" />
+		<label>사과</label>
+		<input type="radio" name="fruit" value="딸기" />
+		<label>딸기</label>
+		<input type="radio" name="fruit" value="파인애플" />
+		<label>파인애플</label>
+		<br/><br/>
+		<label>관심사체크</label>
+		<br/><br/>
+		<input type="checkbox" name="interset" value="경제">
+		<label>경제</label>
+		<input type="checkbox" name="interset" value="IT">
+		<label>IT</label>
+		<input type="checkbox" name="interset" value="음악">
+		<label>음악</label>	
+		<input type="checkbox" name="interset" value="미술">
+		<label>미술</label>
+		<br/><br/>
+		
+		<input type="hidden" name="result" />
+		
+
+		<input type="submit" value="전송" />
+		<input type="reset" value="취소" />
+</form>
+</body>
+</html>

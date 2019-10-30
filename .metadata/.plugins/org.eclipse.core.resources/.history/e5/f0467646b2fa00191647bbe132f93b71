@@ -1,0 +1,46 @@
+package com.java.guest.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.java.db.ConnetionProvider;
+import com.java.db.JdbcUtil;
+import com.java.guest.dto.GuestDto;
+
+public class GuestDao {
+
+	private static GuestDao instance = new GuestDao();
+
+	public static GuestDao getInstance() {
+		return instance;
+	}
+
+	private GuestDao() {
+	}
+
+	public int insert(GuestDto guestDto) {
+
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int check = 0;
+		
+		try {
+			String sql= "insert into guest values(guest_num_seq.nextval,?,?,?,?)";
+			conn=ConnetionProvider.getConnetion();
+			pstmt=conn.prepareStatement(sql);
+			
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally {
+			JdbcUtil.close(pstmt);
+			JdbcUtil.close(conn);
+		}
+		
+		
+		return check;
+
+	}
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>									
+<meta charset="UTF-8">				
+<title>TAG 선택자</title>												
+<style type="text/css">
+
+							/*	CSS 주석은 <!-- 와 다름
+							    CSS(Cascading Style Sheet)
+								1.CSS선언하는 방법
+								2. <head>사이에 선언 </head>
+								3. CSS 파일로 작성 (.css)
+								4. HTML태그들의 속성 (<div style="">예제</div>)
+								
+								2. CSS 관점
+								2-1 태그들을 꾸며준다. (문서관련,여백(위치값)★,선그리기★)
+								2-2 선택자(selector)가 대략 60개가 넘는다. 
+								
+								3.기본 선택자(selector)
+								3-1 태그 정의 하는방법
+								3-2 class 정의하는방법
+								3-3 id로 정의하는방법										
+								
+								*/
+	font{
+		font-size:20px;         /* 기본값 16px ,lem , 100%  */
+		font-family:궁서체;
+		color: red;
+	}
+	span{
+		font-size: 3.0em;
+		font-family: 맑은고딕;
+		color: blue;
+	}				
+	p{
+		font-size: 200%;
+	}
+	div{
+		line-height: 100px; /*문자열 간격*/
+	}
+	
+</style>
+</head>
+<body>
+	<font>안녕하세요.</font><br/><br/>  <!-- CSS에서 확인할거 줄바꿈 확인, 자동줄바꿈 되는것 -  블락  , 안되는거 -  인라인 -->
+	<font>반갑습니다.</font><br/><br/>	<!--  font,span 줄바꿈필요 인라인  , p,div 자동줄바꿈 블락 -->
+	
+	<span>여름입니다.</span><br/><br/>
+	<span>겨울입니다.</span><br/><br/>
+	
+	<p>가을입니다.</p>
+	<p>봄입니다.</p>
+	
+	<div>사과</div>
+	<div>바나나</div>
+	<div>딸기</div>
+</body>
+</html>

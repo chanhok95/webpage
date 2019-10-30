@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이 아웃</title>
+<style type="text/css">
+div {
+	border: solid 2px #cccccc;
+	text-align: center;
+	margin: 5px;
+}
+
+#con {
+	width: 800px;
+	margin: 0px auto;
+}
+
+#header {
+	height: 100px;
+	line-height: 100px;
+}
+
+#nav {
+	height: 100px;
+}
+
+#nav>ul>li {
+	width: 138px;
+	height: 40px;
+	border: solid 2px #dddddd;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	list-style-type: none;
+}
+
+#wrap {
+	overflow: hidden;
+}
+
+#wrap>#content {
+	width: 600px;
+	height: 300px;
+	float: left;
+}
+
+#wrap>#BANNER {
+	width: 155px;
+	height: 300px;
+	float: left;
+}
+
+#footer {
+	height: 100px;
+	line-height: 100px;
+	
+}
+</style>
+</head>
+<body>
+	<div id="con">
+		<div id="header">HEADER</div>
+
+		<div id="nav">
+			<p>NAVIGATION</p>
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+				<li>menu4</li>
+				<li>menu5</li>
+			</ul>
+		</div>
+
+		<div id="wrap">
+			<div id="content">Content</div>
+			<div id="BANNER">banner</div>
+		</div>
+
+		<div id="footer">footer</div>
+
+	</div>
+</body>
+</html>

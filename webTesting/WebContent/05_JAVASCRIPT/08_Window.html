@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function winOpen() {
+		window.open("https://www.naver.com", "naverWin",
+				"width=300px,height=200px scrollbars=no");
+	}
+
+	function winOpenTwo() {
+		window.open(
+						"http://localhost:8181/webTesting/05_JAVASCRIPT/01_Core.html",
+						"coreOpen", "width=500px ,height=500px scrollbars=yes");
+	}
+</script>
+</head>
+<body onload="winOpenTwo()">
+
+	<input type="button" value="클릭" onclick="winOpen()">
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link rel="stylesheet" href="quiz_02.css" />
+</head>
+<body>
+	<div align="center">
+		<div align="center">회원가입(*필수입력사항입니다.)</div>
+		<div class="a">
+			<form>
+				<div class="title">아이디</div>
+				<div class="b">
+					*<input type="text" name="id"> 
+					<input type="submit" value="아이디중복" />
+				</div>
+				<div class="title">비밀번호</div>
+				<div class="b">
+					*<input type="password" name="pwd" />
+				</div>
+
+				<div class="title">비밀번호확인</div>
+				<div class="b">
+					*<input type="password" name="pwdcheck" />
+				</div>
+
+				<div class="title">이름</div>
+				<div class="b">
+					*<input type="text" name="irum" />
+				</div>
+
+				<div class="title">주민번호</div>
+				<div class="b">
+					*<input type="password" name="frontcheck" />- <input
+						type="password" name="backcheck" />
+				</div>
+
+				<div class="title">이메일</div>
+				<div class="b">
+					<input type="text" name="email" />
+				</div>
+
+				<div class="title">우편번호</div>
+				<div class="b">
+					<input type="tel" name="post" /> <input type="submit"
+						value="우편번호검색" />
+				</div>
+
+				<div class="title">주소</div>
+				<div class="b">
+					<input type="text" name="addres">
+				</div>
+
+				<div class="title">직업</div>
+				<div class="b">
+					<select>
+						<option value="one"></option>
+						<option value="two"></option>
+					</select>
+				</div>
+
+				<div class="title">메일수신</div>
+				<div class="b">
+					<input type="radio" name="mail" value="Yes">yes<input
+						type="radio" name="mail" value="No" />no
+				</div>
+
+				<div class="title">관심분야</div>
+				<div class="b">
+					<input type="checkbox" name="favorite" value="경제" />경제 <input
+						type="checkbox" name="favorite" value="it" /> it <input
+						type="checkbox" name="favorite" value="음악" /> 음악 <input
+						type="checkbox" name="favorite" value="미술" /> 미술
+				</div>
+				<div align="center">
+					<input type="submit" value="가입"> <input type="reset"
+						value="취소" />
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

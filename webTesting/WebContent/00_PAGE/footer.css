@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+.footer_layer1 a {
+	border-left: #888 solid 2px;
+	padding: 0 25px;
+}
+
+.footer_layer1 {
+	border: solid 2px black;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	font-size: 30px;
+	height: 30px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.footer_layer2 {
+margin-left:500px; 
+	}
+.footer_layer2 a {
+	float: left;
+	font-size: 30px;
+	border: solid 0px red;
+	margin-right: 30px;
+}
+.add1 {
+	float: left;
+	margin-right: 100px;
+}
+
+.add2 {
+	float: left; 
+	margin-right: 100px;
+}
+
+.add3 {
+	display: inline-block;
+
+	}
+.footer_layer3{
+	font-size: 14px;
+	text-align: center;
+	background-color: #333333;
+	color: white;
+}
+
+.footer_layer3 > address{
+	margin-right: 300px;
+}

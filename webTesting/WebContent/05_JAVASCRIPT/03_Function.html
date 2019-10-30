@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/*
+	 sub(); call by name
+	 fun(10); call by value
+	 int r=abc(); call by value - return
+		
+	 public int abc(int a) {return 10;}
+	 */
+	 
+	 
+	 /* 이벤트핸들러 작업시 사용 접근지정자,지정예약어 쓰면 error */
+	 
+	 function sub() {
+	 	document.write("<h3>자바스크립트 함수</h3>");
+	 }
+	 function fun(a) {
+		document.write("<h3>"+a+"</h3>");
+	 }
+	
+	 function abc(a) {
+		return a+10;
+	}
+	 
+	 sub();
+	 fun(10);
+	 var result =abc(77);
+	 document.write("<h3>"+result+"</h3>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

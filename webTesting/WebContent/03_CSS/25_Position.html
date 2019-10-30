@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>POSITION</title>
+<style type="text/css">
+#red {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+#yellow{
+	width: 400px;
+	height: 500px;
+	background-color: yellow;
+	position:relative; /*자신의 static 원래 위치에서 이동*/
+	top: 50px; left: 50px;
+}
+
+#pink {
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+	position: relative;		/*자신의 원래위치에서 top 100px left 50px만큼의 이동  */
+	top: 100px; left: 50px;
+}
+
+#green {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	position: relative;
+	top: 0px; left: 100px;
+}
+#blue {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: relative;
+	top: 0px; left: 300px;
+}
+
+</style>
+</head>
+<body>
+  	<div id="red"></div>
+    <div id="yellow">
+    	<div id="green"></div>
+    	<div id="blue"></div>
+    </div>
+    <div id="pink"></div>
+</body>
+</html>

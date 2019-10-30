@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.a{
+	border:solid 2px;
+	width: 458px;
+	height: 320px;
+}
+
+.title{
+	border:solid 2px;
+	width:100px;
+	float: left;
+	text-align: left;
+}
+
+.b{
+	border:solid 2px;
+	width:350px;
+	float: left;
+	text-align: left;
+}

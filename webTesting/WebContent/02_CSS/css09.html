@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>스타일 시트 예제</title>
+<style type="text/css">
+div {
+	border-style: solid;
+	border-width: 1px;
+	width: 350px;
+	height: 50px;
+	border-color: red;
+}
+
+body {
+	/*기본으로 margin default 3px이 있음*/
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+font, span {
+	border-style: solid;
+	border-width: 1px;
+	border-left-width: 0px;
+	border-color: blue;
+	display: block;
+	width: 100px;
+	height: 30px;
+	float: left; /*TEXT 행위치*/
+	text-align: center;
+	/* TEXT는 Margin 값을가질수없기 때문에 text-aligen ,line-height로 정렬*/
+	line-height: 30px;
+	margin: 10px 0px 0px 0px;
+}
+</style>
+</head>
+
+<body>
+	<div>
+		<font style="margin-left: 10px; border-left-width: 1px;">가</font> <font>나</font>
+		<font>다</font>
+	</div>
+	<br />
+	<br />
+
+	<div>
+		<span style="margin-left: 10px; border-left-width: 1px;">AA</span> <span>BB</span>
+		<span>CC</span>
+	</div>
+</body>
+</html>

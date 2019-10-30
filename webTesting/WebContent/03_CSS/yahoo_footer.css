@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+footer{
+	width: 1000px; height: 200px; text-align: center; line-height: 200px;
+	border: 1px solid #cccccc; margin: 20px auto 0px; 
+}

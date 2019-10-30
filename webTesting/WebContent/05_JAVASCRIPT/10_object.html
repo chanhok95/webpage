@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//Number 객체
+
+	var su=10;
+	var value = new Number(20);
+	document.write(su+"</br>"+value);
+	
+	
+	var num=123.45678;
+	document.write("num:"+num.toFixed(3)); //123.4567
+	document.write("num:"+num.toPrecision(10)+"<br/>"); //123.4567800
+	document.write("num:"+num.toPrecision(5)+"<br/>"); //123.46
+	document.write("num:"+Number.MAX_VALUE+"~" + Number.MIN_VALUE+"<br/>"); //123.46
+	
+	//Math객체
+	document.write("절대값"+ Math.abs(-15)+"<br/>");
+	document.write("최대값"+ Math.max(10,15)+"<br/>");
+	document.write("최소값"+Math.min(10,15)+"<br/>");
+	document.write("누승:"+Math.pow(2,3)+"<br/>");
+	document.write("랜덤값"+Math.random()+"<br/>");
+	
+	//Array객체
+	var a=[2,3,4];
+	var strArray = new Array("사과","바나나","딸기");
+	strArray.push("메론");
+	
+	document.write("<br/>"+"출력:"+strArray+"<br/>");
+	document.write("출력시/ - >"+strArray.join("/") + "<br/>");
+	document.write("1번지 부터 출력 - >"+strArray.slice(1)+"<br/>");
+	document.write("오름차순 정렬 - >"+strArray.sort() + "<br/>");
+	document.write("내림차순 정렬 - >"+strArray.reverse()+"<br/>");
+
+	//Global 객체 : 객체 아예 사용안한다. 사용하면 error
+//	window.alert("하하하");
+//	alert("호호호");
+	
+	
+	//문자열 -> 정수형
+	var su="77";
+	document.write("정수형으로 출력"+ (parseInt(su)+100)+"</br>");  // 괄호를 이용해 우선순위를 변경해서 먼저 값연산후 + 해서 출력 괄호를 안하면 우선순위가 문자열로 나와서 값출력이안됨
+	
+	//특수문자 처리
+	var url="!@#$%^&";
+	var b = encodeURIComponent(url);
+	document.write("b ->"+b +"<br/>");
+	document.write("b ->" + decodeURIComponent(b));
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

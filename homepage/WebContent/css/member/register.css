@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.content{
+	border: solid 2px black;
+	width: 500px;
+	height: 330px;
+	
+	position:absolute;
+	left: 50%;
+	margin-left:-250px; 
+}
+
+.sub{
+	border: solid 2px black;
+	width: 130px;
+	float: left;
+	height: 25px;
+	
+	border-left: 0px;
+	border-top: 0px;
+	
+}
+
+.type{
+	border: solid 2px black;
+	width: 500px;
+	height: 25px;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	
+}
+

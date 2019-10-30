@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>혼합 선택자</title>
+<style type="text/css">
+font{
+	font-size: 12px;
+	color: skyblue;
+}
+.show{
+	font-size: 20px;
+}
+#disp{
+	font-size: 40px;
+}
+#myFont{
+	font-family: 궁서체;
+}
+
+																		/*  body부모 -> head 부모 -> 전체틀 */
+</style>
+</head>
+<body>
+	<font> 연습입니다./12px /skyblue </font>
+	<br/><br/>
+	
+	<font class="show" id ="myFont"> 연습입니다./12px-> 20px /skyblue/ 궁서체 </font> <!-- 태그보다 클래스가 우선순위가 높음 -->
+	<br/><br/>
+	
+	<font id="disp">  연습니다. /12px -> 40px /skyblue</font>  <!-- 태그보다 아이디가 우선순위가 높음 -->
+	<br/><br/>
+	
+	<font id="disp" class="show"> 연습니다. /12px ->40px /skyblue</font><!-- 우선순위 id ->class -> tag -->
+	<br/><br/>
+	
+	<font class="show" id="disp" style="font-size: 9px;"> 연습니다. /12px->9px /skyblue</font> <!--  자신의속성이 가장 우선순위가 높음 (java에서도 마찬가지) -->
+</body>
+</html>

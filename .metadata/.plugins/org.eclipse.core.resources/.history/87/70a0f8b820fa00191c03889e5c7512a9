@@ -1,0 +1,5 @@
+package com.java.guest.dto;
+
+public class GuestDto {
+
+}

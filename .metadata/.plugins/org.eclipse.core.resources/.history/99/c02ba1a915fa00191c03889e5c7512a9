@@ -1,0 +1,50 @@
+package com.java.member.command;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.java.commad.CommandAction;
+import com.java.member.dao.MemberDao;
+import com.java.member.dto.MemberDto;
+
+public class DeleteOkAction implements CommandAction{
+
+	@Override
+	public String proRequest(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+		// TODO Auto-generated method stub
+//		String id = request.getParameter("id");
+//		logger.info(logMsg+id);
+//		
+//		int check=MemberDao.getInstance().idCheck(id);
+//		logger.info(logMsg+check);		
+//		
+//		request.setAttribute("check", check);
+//		request.setAttribute("id", id);
+		MemberDto memberDto =new MemberDto();
+		memberDto.setNum(Integer.parseInt(request.getParameter("num")));
+		memberDto.setId(request.getParameter("id"));
+		memberDto.setPassword(request.getParameter("password"));
+		memberDto.setEmail(request.getParameter("email"));
+		
+		memberDto.setZipcode(request.getParameter("zipcode"));
+		memberDto.setAddress(request.getParameter("address"));
+		memberDto.setJob(request.getParameter("job"));
+		
+		memberDto.setMailing(request.getParameter("mailing"));
+		memberDto.setInterest(request.getParameter("interest"));
+		
+		
+		
+		int check = MemberDao.getInstance().deleteOk(memberDto);
+		logger.info(logMsg+check);
+		
+		request.setAttribute("check", check);
+		
+		
+			
+		
+		return "/WEB-INF/view/member/deleteOk.jsp";
+	
+	}
+
+}

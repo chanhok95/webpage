@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>POSITION</title>
+<style type="text/css">
+div{												/* absolute : HTML요소가 부모의 위치를 기준으로 이동*/
+width: 100px; height: 100px;
+
+		
+}
+div:nth-child(1) {
+	background-color: red; 
+	position: fixed; /*스크롤 을 움직여도 항상 화면에서 보여진다.  */
+}
+div:nth-child(2) {
+	background-color: green;
+	position: absolute;
+	top: 50px;left: 50px;
+}
+div:nth-child(3) {
+	background-color: yellow;
+	position: absolute;
+	top: 100px;left: 100px;
+}
+#wrap{
+width: 300px; height: 300px;
+background-color: aqua;
+position: absolute;
+top:300px; left: 300px;
+}
+
+#wrap > .content {/*부모위치의 중심값*/
+	width: 50px; height: 50px;
+	background-color: orange;
+	position: absolute;
+	top:50px; left:50px;
+	opacity: 0.5;
+}
+
+</style>
+</head>
+<body>
+  	<div></div>
+    <div></div>
+    <div></div>
+
+    <div id="wrap">
+        <div class="content"></div>
+    </div>
+</body>
+</html>

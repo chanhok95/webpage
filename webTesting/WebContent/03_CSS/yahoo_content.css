@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+#content{
+	width: 1000px; overflow: hidden;
+	margin: 0px auto; border: 0px solid red;
+}
+
+#content > #main_nav{ 
+	float:left;	width: 155px; overflow: hidden; 
+	border: 0px solid blue;
+}
+
+#content > #main_nav li{
+	height: 35px;
+}
+
+#content > #main{ 
+	float: left; width: 600px; overflow: hidden; 
+	border: 0px solid yellow;
+}
+
+#content > #main > div{
+	width: 590px; border: 1px solid #cccccc;
+}
+
+#content > #main > div:nth-child(1){
+	height: 300px;
+}
+
+#content > #main > div:nth-child(2){
+	height: 150px; margin-top: 5px;
+}
+
+#content > #main > div:nth-child(3){
+	height: 50px; background-color: #500095;
+	margin-top: 10px; margin-bottom: 8px;
+}
+
+#content > #main > div:nth-child(3) li{
+	float: left; color: #ffffff; font-size: 1.1em; margin-right: 23px;
+}
+
+#content > #main > div:nth-child(3) ~ div{
+	height: 120px; margin-top: 2px;
+}
+
+
+#content > #main_banner{
+	float: left; width: 230px; overflow: hidden;  
+	border: 0px solid green;
+} 
+
+#content > #main_banner > div{
+	width: 229px; border: 1px solid #cccccc; margin-top: 5px;
+}
+
+#content > #main_banner > div:nth-child(1), 
+#content > #main_banner > div:nth-child(2){
+	height: 100px;
+}
+
+#content > #main_banner > div:nth-child(3){
+	height: 150px;
+}
+
+#content > #main_banner > div:nth-child(4){
+	height: 200px;
+}
+
+#content > #main_banner > div:nth-child(5){
+	height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+

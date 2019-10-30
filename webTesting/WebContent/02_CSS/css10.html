@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>스타일 시트 예제</title>
+<style type="text/css">
+body {
+	margin: 10px 0px 10px 0px; /*10px(위,아래) 10px(왼쪽,오른쪽)  / 위,좌우 , 아래*/
+}
+
+menu {
+	border: solid 1px red;
+	width: 400px;
+	height: 50px;
+}
+
+li {
+	border: solid 1px blue;
+	width: 100px;
+	height: 30px;
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 10px;
+	border-left-width: 0px;
+}
+</style>
+</head>
+<body>
+	<menu>
+		<li style="border-left-width: 1px;">사과</li>
+		<li>바나나</li>
+		<li>딸기</li>
+	</menu>
+
+	<menu>
+		<li style="border-left-width: 1px;">당근</li>
+		<li>호박</li>
+		<li>시금치</li>
+	</menu>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function myBlur(obj) {  // obj = this = input
+		obj.value = "아이디를 입력하세요"; // onblur 겉면에 표시해줌
+	}
+	function myFocus(obj) {
+		obj.value = "중복아이디 입니다"; // onfocus 텍스트창을 입력했을때 나오게함
+	}
+	
+	function myChange(obj) {
+		window.alert(obj.value);
+	}
+	
+	function mySelect() {
+		window.alert("선택되었습니다.);
+	}
+</script>
+</head>
+<body>
+	<form action="#" method="get">
+		<!-- 폼 이벤트:focus,blue,change,select,submit 등등 -->
+		<input type="text" onblur="myBlur(this)" onfocus="myFocus(this)" /> 
+		<select onchange="myChange(this)">
+			<option value="사과">사과</option>
+			<option value="바나나">바나나</option>
+			<option value="배">배</option>
+			<option value="딸기">딸기</option>
+		</select>
+		<br/>
+		
+		
+		<input type="text" value="Hello World" onselect="mySelect()" />
+
+
+	</form>
+</body>
+</html>
+
+
+

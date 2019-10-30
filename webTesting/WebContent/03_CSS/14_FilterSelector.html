@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>필터 선택자 - 문자 블록</title>
+<style type="text/css">
+/* 필터 선택자의 종류 : 문자블록,마우스,콘텐츠,하이퍼링크(link,visited,active) */
+#content {
+	width: 300px;
+}
+
+#content > li {
+	list-style-type: none;
+	border: 1px solid #CCCCCC;
+	background-color: #efefef;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+}
+
+#content a {
+	color: #000000;
+	text-decoration: none;
+}
+							/* 양이 많을때 첫번쨰 마지막꺼만 뽑을때 클래스로 뽑음 */				
+#content > li:nth-child(1){ /* #content a:nth-child(1) */
+			border-radius:10px 10px 0px 0px;  /* 좌상단,우상단,우하단,좌하단 */
+}
+
+#content > li:nth-child(8) {
+	border-radius: 0px 0px 10px 10px;
+} 
+
+#content > li:nth-child(2n) { /* 짝수 번호선택 2n ,홀수번호 선택 2n+1, 2n+2(4부터)  */
+	background-color: #de9093;
+}
+#content > li:first-child , #content >li:last-child {
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+	<div>
+		<ul id="content">	<!-- 기준이되는 content id,class로 잡음 -->
+			<li><a href="#">MENU1</a></li>
+			<li><a href="#">MENU2</a></li>
+			<li><a href="#">MENU3</a></li>
+			<li><a href="#">MENU4</a></li>
+			<li><a href="#">MENU5</a></li>
+			<li><a href="#">MENU6</a></li>
+			<li><a href="#">MENU7</a></li>
+			<li><a href="#">MENU8</a></li>
+		</ul>
+	</div>
+</body>
+</html>

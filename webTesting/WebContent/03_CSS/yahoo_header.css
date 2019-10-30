@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body{ margin: 0px; }
+a{text-decoration: none; }
+li{list-style-type: none;}
+
+header{
+	width: 100%; overflow: hidden; border: 1px soild #cccccc;
+}
+
+header > #header_nav{
+	width: 100%; overflow: hidden; background-color: #2d1152;
+}
+
+/*
+header > #header_nav >.list li{
+	float: left; height: 30px; line-height: 30px; font-size: 0.9em;
+	color: #ffffff; margin-right: 20px;
+}
+
+header > #header_nav >.firefox{
+	float: right;  height: 30px; line-height: 30px; color: #ffffff;
+}
+*/
+
+header > #header_nav >.list li, header > #header_nav >.firefox{
+	height: 30px; line-height: 30px; color: #ffffff; float: right;
+}
+
+header > #header_nav >.list li{
+	float: left; font-size: 0.9em; margin-right: 20px;
+}
+
+header > #header_info{
+	width: 100%; overflow: hidden;
+}
+
+header > #header_info > div{
+	float: left; margin:10px 50px 10px 0px;
+}
+
+header input[type="text"]{
+	width: 400px; height: 38px; border: 1px solid #3488d9;
+	font-size: 20px;
+}
+
+header input[type="button"]{
+	width: 124px; height: 38px; font-size: 1.2em; color:#ffffff;
+	background-image: url("../images/search_btn.png");
+}
+
+header > #header_info > .service li{
+	float: left; margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

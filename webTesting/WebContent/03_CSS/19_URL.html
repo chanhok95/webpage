@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>단위</title>
+<style type="text/css">
+/* 			CSS단위 : 100% 1.0em ,16px  
+	 		
+	 		URL 단위 : 
+
+*/	
+#wrap { 			/*wrap - 감싸다  */			 	
+	width: 800px;
+	height: 500px;
+	margin: 0px auto;
+	border: 1px solid #cccccc;
+}
+
+#wrap > #content1 {
+	width: 80%; height: 50%; margin: 0px auto;	
+	border: 1px soli red;
+	background-image: url("./../images/Penguins.jpg");
+	background-size: 50%;
+	font-size: 2em; color: #ffffff;
+	font-weight: bold; text-align: center;
+	line-height: 200px; 
+	
+}	
+
+#wrap > #content2{
+	width: 500px; height: 230px; margin: 0px auto;
+	border: 1px soli red;
+	background-image: url("http://www.kitri.re.kr/static/images/kitri/common/h_logo.png");
+	background-size: 50%; font-size: 1.5em; color: red;
+	font-weight: bold; text-align: center; line-height: 230px;
+	/* background-repeat: no-repeat; 이미지를 하나만 */  
+}
+#wrap > #content3{
+text-align: center;
+}
+
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="content1">해당 이미지는 저작권 보호를 받습니다.</div>
+		<div id="content2">해당 이미지는 저작권 보호를 받습니다.</div>
+		<div id="content3">해당 이미지는 저작권 보호를 받습니다.</div>
+	</div>
+</body>
+</html>

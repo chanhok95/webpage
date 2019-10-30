@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>웹포트</title>
+<link
+	href="https://fonts.googleapis.com/css?family=Long+Cang|Nanum+Myeongjo|Open+Sans+Condensed:300&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap"
+	rel="stylesheet">
+
+<style type="text/css">
+li {
+	list-style-type: none;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	width: 90%;
+	margin: 0px auto;
+	border: 1px solid #cccccc;
+}
+
+#header>#gnb, #header>#lnb {
+	border: 0px dotted red;
+	overflow: hidden;
+}
+
+#header>#gnb li, #header>#lnb li {
+	border: 1px dotted #cccccc;
+	float: left;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	font-family: 'Zhi Mang Xing', cursive;
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+#header>#lnb li {
+	float: right;
+}
+
+#content {
+	width: 90%;
+	margin: 0px auto;
+	border: 1px solid #cccccc;
+	overflow: hidden;
+}
+#content > #section{
+	width: 1000px; height: 400px;
+	border: 1px solid #cccccc;
+	float: left;
+
+}
+
+#content > #aside{
+	width: 300px; height: 400px;
+	margin:10px;
+	border: 1px solid #cccccc;
+	float: left;
+
+}
+
+#footer {
+	width: 90%;
+	margin: 0px auto;
+	border: 1px solid #cccccc;
+	height: 100px; text-align: center; line-height: 100px;
+	font-family: 'Zhi Mang Xing', cursive;
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="gnb">
+			<ul>
+				<li><a href="#">gnb1</a></li>
+				<li><a href="#">gnb2</a></li>
+				<li><a href="#">gnb3</a></li>
+				<li><a href="#">gnb4</a></li>
+				<li><a href="#">gnb5</a></li>
+			</ul>
+		</div>
+
+		<div id="lnb">
+			<ul>
+				<li><a href="#">lnb1</a></li>
+				<li><a href="#">lnb2</a></li>
+				<li><a href="#">lnb3</a></li>
+				<li><a href="#">lnb4</a></li>
+				<li><a href="#">lnb5</a></li>
+			</ul>
+
+		</div>
+		<div id="content">
+			<div id=section>행사가 끝난 뒤에는 이미경 부회장이 주관하는 애프터 디너도 마련됐다. 비버리힐즈
+				게스트 하우스에 모여 다같이 수트와 이브닝 드레스를 입고 만찬을 즐겼다.</div>
+			
+			<div id=aside>행사가 끝난 뒤에는 이미경 부회장이 주관하는 애프터 디너도 마련됐다. 비버리힐즈 게스트
+				하우스에 모여 다같이 수트와 이브닝 드레스를 입고 만찬을 즐겼다.</div>
+		</div>
+
+		<div id="footer">Office information</div>
+	</div>
+</body>
+</html>

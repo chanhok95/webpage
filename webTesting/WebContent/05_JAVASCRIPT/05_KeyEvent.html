@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function aa() {
+		window.alert("keydown-----------------------");
+	}
+	
+	function bb() {
+		window.alert("keypress-----------------------");
+	}
+	
+	function cc(obj) {
+		window.alert("keyup-----------------------");
+		obj.style.color="red";
+	}
+</script>
+</head>
+<body>
+	<!-- 키 이벤트 : keypress,keydown,keyup -->
+
+	<input type="text" onkeydown="aa()" />
+	<br/><br/>
+	<input type="text" onkeypress="bb()" />
+	<br/><br/>
+	<input type="text" onkeyup="cc(this)" />
+	<br/><br/>
+
+	
+
+
+
+</body>
+</html>

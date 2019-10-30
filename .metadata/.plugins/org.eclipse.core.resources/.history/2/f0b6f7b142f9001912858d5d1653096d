@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+
+/*function registerForm(obj) {
+	alert("ok");
+}
+*/
+
+function idCheck(obj, root) {
+//	alert(obj.id.value);
+	
+	if(obj.id.value==""){
+		alert("아이디를 반드시 입력하세요.");
+		obj.id.focus();
+		return false;
+	}
+	
+	var url=root+"/member/idCheck.do?id="+obj.id.value;
+//	alert(url);
+	
+	open(url,"","width=400,height=200 scrollbars=yes");
+}
+
+function zipcodeRead(root) {
+	var url=root + "/member/zipcode.do";
+	alert(url);
+//	open(url,"","width=400,height=400,scrollbars=yes");
+	
+}

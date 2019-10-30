@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title><!-- 실행확인하고 주석작업 단계별로 -->
+<script type="text/javascript">
+	function checkForm(obj) {	/* 정규화 수만입력받기*/
+		if(obj.su.value==""){
+			alert("수를 입력하세요.");
+			obj.su.focus();
+				return false;
+		}
+		
+		if(obj.bunho.value==""){
+			alert("수를 입력하세요.");
+			obj.bunho.focus();
+				return false;
+		}
+		if(obj.value.value==""){
+			alert("수를 입력하세요.");
+			obj.value.focus();
+				return false;
+		
+		}
+		
+		if(obj.bunho.value != "+" && obj.bunho.value !="-" && obj.bunho.value !="*" && obj.bunho.value != "/"){
+			alert("부호를 잘못입력하셨습니다");
+			obj.bunho.focus();
+			return false;
+			
+		}
+		if(obj.bunho.value == "/"){
+			if(obj.value.value ==0){
+				alert("0으로 나눌수없습니다.");
+				obj.value.focus();
+			return false;
+			}
+		}
+	}
+
+</script>
+</head>
+<body>
+	<form action="http://localhost:8181/webTesting/com/java/mvc01/Example02" method="post" onsubmit="return checkForm(this)">
+	<label >수</label>
+	<input type="text" name="su" />
+	<br/>
+	
+	<label>부호</label>
+	<input type="text" name="bunho" />
+	<br/><br/>
+	
+	<label>수</label>
+	<input type="text" name="value" />
+	<br/><br/>
+	
+	<input type="submit" value="전송" />
+	<input type="reset" value="취소" /> 
+	</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>이미지 읽어오기</h3>
+	
+	
+	<h3>현재폴더</h3>
+	<img src="./coin.PNG" width="200" height="200"> <!-- ./ 현재경로 -->
+	<br><br/>
+	
+	<h3>상위폴더</h3>
+	<img  src="./../images/coin.PNG" width="200" height="200"> <!-- 상대경로 -->
+	
+	<h3>현재위치에서 </h3>
+	<img  src="./test/coin.PNG" width="200" height="200">
+	
+	  <br/><br/>
+  <!--  ./ 현재폴더  -->
+	<!--  ../ 상위폴더-->  
+	<!--  / 최상위경로 서블릿에서 사용 -->
+	<img alt="" src="https://ssl.pstatic.net/tveta/libs/1256/1256396/e38d0d3635669581e0d1_20190924154810897.jpg"/>
+	<br/><br/>
+	
+	<h3>오디오</h3>
+	<audio controls="controls" autoplay="autoplay" loop="loop">
+		<source src="./../images/Kalimba.mp3" type="audio/mpeg"/>
+	</audio>
+	<br/><br/>
+	
+	
+	<h3>동영상</h3>
+	<video controls="controls">
+	<source src="./../images/penguins.mp4" type="video/mp4" />
+	</video>
+</body>
+</html>

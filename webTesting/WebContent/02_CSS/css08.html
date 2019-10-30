@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선</title>
+<style type="text/css">
+div {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 1px;
+	width: 150px;
+	height: 30px;
+	font-family: 굴림체;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+	border-left-width: 0px;
+}
+
+span {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	display: block; /* 인라인방식이기 때문에 block처리 */
+	width: 130px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	border-right-width: 0px;
+}
+
+a {
+	border-style: solid;
+	border-color: #000000;
+	display: block;
+	border-width: 1px;
+	width: 130px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	border-left-width: 0px;
+	text-decoration: none;
+}
+/*a태그 기능 3개*/
+a:link { /*방문하지 않았을때*/
+	color: yellow;
+}
+
+a:hover {
+	/*마우스를 올려놓았을때*/
+	font-size: 30px;
+	color: red;
+}
+
+a:visited { /*1회 방문했을때*/
+	color: blue;
+}
+
+a:active { /*마우스클릭순간*/
+	
+}
+</style>
+</head>
+<body>
+	<div style="border-left-width: 1px">뉴스</div>
+	<div>까페</div>
+	<div>블로그</div>
+	<div>메일</div>
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<span>A</span>
+	<span style="border-right-width: 1px">B</span>
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<font>1</font>
+	<font>2</font>
+	<font>3</font>
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<a href="http://www.naver.com" style="border-left-width: 1px">네이버</a>
+	<a href="http://www.google.co.kr">구글</a>
+	<a href="http://www.daum.net">다음</a>
+</body>
+</html>

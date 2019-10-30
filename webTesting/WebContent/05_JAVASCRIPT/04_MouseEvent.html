@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function disp(value) {
+		document.write("<h3> disp Function: " +value +" </h3>");						/*document.write (다른페이지로 이동후 출력을보여주고) 
+																						  window.alert (페이지내의 메시지박스를 보여줌) ,window는 생략가능하지만 일단 쓰라고하심. */
+	}
+	function sub() {
+		/*  1. 내장객체:자바스크립트 엔진에 기본적으로 내장되어 있는 객체,편리함을 제공 ,객체발생 x
+			
+			2. 내장객체구성:최상위 내장객체 windows객체
+				1)DOM:웹 표시에 표시되는 HTML,XML 등 이루어진 인터페이스
+				2)BOM:웹 브라우저에 내장된 객체 location,history,navigator 등
+				3)javascript:object,Array,Number 등
+		*/
+		window.alert("나 불렀니");
+	}
+	
+	function disub() {
+		window.alert("나 불렀니");
+		
+	}
+	
+	function aa() {
+	var value =	window.prompt("원하는 숫자를 넣으세요.","정수형 1~10까지 수만 입력하세요.");
+	window.alert(value);
+	}
+	
+	function bb() {
+		var value =window.confirm("정말로 삭제하시겠습니까?");
+		//alert(value);
+		
+		if(value == true){
+			window.alert("삭제");	//db삭제
+		}else{
+			window.alert("취소");
+		}
+	}
+	
+	function xx(ob) { //obj=this=a
+		ob.style.color="blue";		//<a style="color:blue; font_size:20px">
+		ob.style.fontsize="20px"; 
+	}
+	function yy(obj) {
+		obj.style.color="red";
+		obj.style.fontsize="12px";
+		
+		
+	}
+</script>
+</head>
+<body>													  
+	<!-- 마우스 이벤트:click 클릭시이벤트,dbclick 더블클릭,mousedown 마우스를 클릭하자마자 ,mouseup 마우스를 띄었을때,mouseover 마우스를 올렸을때,mouseout 마우스를 올리지않았을때,onwheel  -->
+	<input type="button" value="확인1" onclick="disp(10)" />
+	<br/><br/>
+
+	<a href="#" style="text-decoration:" onclick="disp(24.5)">클릭하세요</a>
+	
+	<h3 onclick="disp('하하하')" style="cursor: pointer;">클릭하세요 </h3> <!-- 쌍따옴표 안에 홀따옴표  -->
+
+	<input type="button" value="확인2" onmousedown="sub()" />
+	<br/><br/>
+	<input type="button" value="확인3" onmouseup="sub()" />
+	<br/><br/>
+	<input type="button" value="확인4" ondblclick="disub()" />
+	<br/><br/>
+	<input type="button" value="확인5" onclick="aa()" />
+	<br/><br/>
+	<input type="button" value="확인6" onclick="bb()" />
+	<br/><br/>
+	
+	<a href="#" style="text-decoration: none;" onmouseover="xx(this)" onmouseout="yy(this)">클릭하세요</a> <!-- a태그를 불러오고싶을때 this -->
+	
+	
+</body>
+</html>
