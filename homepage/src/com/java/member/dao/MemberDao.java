@@ -9,6 +9,7 @@ import java.util.Date;
 
 import com.java.db.ConnetionProvider;
 import com.java.db.JdbcUtil;
+import com.java.guest.dto.GuestDto;
 import com.java.member.dto.MemberDto;
 import com.java.member.dto.ZipcodeDto;
 
@@ -274,4 +275,7 @@ public class MemberDao {
 
 		return check;
 	}
+	
+
+	
 }

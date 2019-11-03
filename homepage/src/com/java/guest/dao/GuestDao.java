@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import com.java.db.ConnetionProvider;
 import com.java.db.JdbcUtil;
 import com.java.guest.dto.GuestDto;
+import com.java.member.dto.MemberDto;
 
 public class GuestDao {
 
@@ -123,5 +124,87 @@ public class GuestDao {
 
 		return count;
 	}
+	
+	
+	public int delete(int num) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int check= 0;
+		
+		
+		try {
+			String sql = "delete from guest where num =?";
+			conn = ConnetionProvider.getConnetion();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, num);
 
+			check= pstmt.executeUpdate();
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			JdbcUtil.close(pstmt);
+			JdbcUtil.close(conn);
+		}
+		
+		return check;
+		
+	}
+	
+	public GuestDto update(int num) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs =null;
+		GuestDto guestDto = null;
+		try {
+			String sql ="select * from guest where num=?";
+			conn= ConnetionProvider.getConnetion();
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setInt(1, num);
+			
+			rs=pstmt.executeQuery();
+			if(rs.next()) {		//행많이가져갈때 while문
+				guestDto = new GuestDto();
+				guestDto.setNum(rs.getInt("num"));
+				guestDto.setName(rs.getString("name"));
+				guestDto.setPassword(rs.getString("password"));
+				guestDto.setMessage(rs.getString("message"));
+				guestDto.setWriteDate(new Date(rs.getTimestamp("write_date").getTime()));
+			}
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			JdbcUtil.close(pstmt);
+			JdbcUtil.close(conn);
+		}
+		
+		return guestDto;
+	}
+	
+	public int updateOk(GuestDto guestDto) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int check =0;
+		try {
+			String sql = "update guest set password=?,message=? where num=?";
+			conn = ConnetionProvider.getConnetion();
+			pstmt = conn.prepareStatement(sql);
+			
+			pstmt.setString(1, guestDto.getPassword());
+			pstmt.setString(2, guestDto.getMessage());
+			pstmt.setInt(3, guestDto.getNum());
+			check = pstmt.executeUpdate();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(pstmt);
+			JdbcUtil.close(conn);
+
+		}
+		return check;
+	}
+	
 }

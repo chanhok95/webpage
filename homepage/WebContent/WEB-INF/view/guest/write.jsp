@@ -10,6 +10,7 @@
 <meta charset="UTF-8">
 <title>방명록</title>
 <link href="${root}/css/guest/write.css" rel="stylesheet">
+<script type="text/javascript" src="${root }/javascript/guest/guest.js"></script>
 </head>
 <body>
 	<jsp:include page="../../../index.jsp" />
@@ -44,10 +45,10 @@
 				<div  class="form" style="margin: 100px auto; border-width: 1px;">
 				
 					<div class="title">
-					${guestDto.num }&nbsp;&nbsp;
-					<fmt:formatDate value="${guestDto.writeDate }" pattern="yyyy-MM-dd HH:mm:ss" />
-					<a href="">수정</a>
-					<a href="">삭제</a>
+					${guestDto.num}&nbsp;&nbsp;
+					<fmt:formatDate value="${guestDto.writeDate}" pattern="yyyy-MM-dd HH:mm:ss" />
+					<a href="javascript:updateCheck('${root}','${guestDto.num}','${currentPage}')">수정</a>
+					<a href="javascript:deleteCheck('${root}','${guestDto.num}','${currentPage}')">삭제</a>
 					</div>
 					
 					<div class="content">
@@ -81,7 +82,7 @@
 		<c:set var="startPage" value="${rs*pageBlock+1 }" />
 		<c:set var="endPage" value="${startpage+pageBlock-1 }" />
 		
-		<%-- 3. 총레코드수 :270 /10 =27 요청 페이지 :25(start21,end 30) --%>	 	
+		<%-- 3. 총레코드수 :270 /10 =27 요청 페이지 :25(start21,end 30) --%> 	
 	 	<c:if test="${endPage > PageCount }">
 	 	<c:set var="endPage" value="${pageCount}" /> 
 	 	</c:if>

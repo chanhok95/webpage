@@ -6,8 +6,18 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="guestList"/>
+		<item key="selection" value="se"/>
 		<list key="findhistory">
+			<item value="sess"/>
+			<item value="se"/>
+			<item value="session"/>
+			<item value="그룹번호"/>
+			<item value="그룹번허"/>
+			<item value="그룹번허ㅗ"/>
+			<item value="root"/>
+			<item value="value"/>
+			<item value="subje"/>
+			<item value="block"/>
 			<item value="guestList"/>
 		</list>
 		<list key="replacehistory">
