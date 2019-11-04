@@ -25,4 +25,16 @@
     <!--
     <Manager pathname="" />
     -->
+   
+    <Resource name="jdbc/mvcDB" auth="Container"
+              type="javax.sql.DataSource" driverClassName="oracle.jdbc.driver.OracleDriver"
+              url="jdbc:oracle:thin:@localhost:1521:xe"
+              username="mvc" password="1234" maxTotal="30" maxIdle="10"
+              maxWaitMillis="5000"/>
+    <!-- maxTotal : 최대 툴 개수 (동시 접속자 수) 
+    	 maxIdle : 현재 접속이 덦더라도 실제 연결할 수 있는 개수
+    	 maxWaitMillis : Connection 없을 경우 0이면 error , -1 무한대로 기다림 
+    -->
+    
+    
 </Context>

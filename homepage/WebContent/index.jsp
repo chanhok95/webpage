@@ -33,6 +33,9 @@
 	<a href="${root }/board/write.do">게시판 작성</a>
 	<a href="${root }/board/list.do">게시판 목록보기</a>
 	
+	<h3>파일게시판</h3>
+	<a href="${root }/fileboard/write.do">파일게시판 작성</a>
+	<a href="${root }/fileboard/list.do">파일게시판 목록보기</a>
 <!-- 	<h3>게시판</h3>
 	<h3>방명록</h3>
 	<h3>파일게시판</h3> -->

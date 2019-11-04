@@ -1,5 +1,0 @@
-
-#Member
-/member/register.do=com.java.member.command.RegisterAction
-/member/registerOk.do=com.java.member.command.RegisterOkAction
-/member/idCheck.do=com.java.member.command.IdCheckAction

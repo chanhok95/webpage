@@ -1,0 +1,4 @@
+visual studio 한글 ??????로 뜰때 이유 : hyper v 옵션 때문임 
+(안드로이드 스튜디오 라이젠 hyper 때문에 체크해놈
+ (windows 기능/켜기 끄기 옵션에서 , windows Hypervisor platform 체크 해제하면 visual stdio 한글??? 안깨지고 
+체크해야 안드로이드 스튜디오 amd라이젠 시뮬레이션 돌아감 ;;

@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import com.java.board.dto.BoardDto;
 import com.java.db.ConnetionProvider;
 import com.java.db.JdbcUtil;
-import com.java.guest.dto.GuestDto;
-import com.sun.media.jfxmedia.logging.Logger;
 
 public class BoardDao {
 	private static BoardDao instance = new BoardDao();
@@ -32,7 +30,8 @@ public class BoardDao {
 		writeNumber(conn, boardDto);
 
 		try {
-			String sql = "insert into board values(board_board_number_seq.nextval,?,?,?,?,?,?,?,?,?,?)";
+			String sql = "insert into board(board_number,writer,subject,email,content,password,write_date,read_count,group_number,sequence_number,sequence_level)" //생략되는게없으면 ? 
+					+ "values(board_board_number_seq.nextval,?,?,?,?,?,?,?,?,?,?)";
 			conn = ConnetionProvider.getConnetion();
 			pstmt = conn.prepareStatement(sql);
 
