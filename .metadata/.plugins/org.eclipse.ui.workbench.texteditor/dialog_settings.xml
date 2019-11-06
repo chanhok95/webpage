@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="fileName"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="pds"/>
+			<item value="update"/>
+			<item value="getboard"/>
+			<item value="fileItem"/>
+			<item value="read"/>
 			<item value="content"/>
 			<item value="filename"/>
 			<item value="file"/>
@@ -18,11 +23,6 @@
 			<item value="resoue"/>
 			<item value="resouec"/>
 			<item value="resouece"/>
-			<item value="sess"/>
-			<item value="se"/>
-			<item value="session"/>
-			<item value="그룹번호"/>
-			<item value="그룹번허"/>
 		</list>
 		<list key="replacehistory">
 		</list>

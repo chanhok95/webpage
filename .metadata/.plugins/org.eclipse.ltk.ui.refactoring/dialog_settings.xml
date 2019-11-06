@@ -6,4 +6,8 @@
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 	</section>
+	<section name="RefactoringWizard.Externalize strings in &apos;FrontController.java&apos;">
+		<item key="width" value="612"/>
+		<item key="height" value="470"/>
+	</section>
 </section>
