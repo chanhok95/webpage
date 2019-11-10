@@ -1,0 +1,15 @@
+URL -> http://www.naver.com 과 같은 전체주소
+URI ->  /webTesting/write.kitri(누르는곳)  ,현재 프로젝트 파일경로까지 
+contextpath -> 현재 프로젝트명/webTesting (현재 작업공간) ,현재 프로젝트path경로
+Servletpath -> 현재경로 (현재 서블릿의 풀패키지명)
+
+jsp -> 해당 페이지로가는 ex) location.href="${root}/member/main.do"
+properties  -> /member/main.do=패키지.클래스
+class -> 클래스 생성 
+jsp ->작성
+
+디버깅 무조건(흐름파악중요)
+
+${pageContext.request.contextPath}
+
+ch123 1234 (MA)

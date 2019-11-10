@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- UNPOOL 풀안쓰는경우 
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="UNPOOLED">
+        <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+        <property name="username" value="mvc"/>
+        <property name="password" value="1234"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+  <mapper resource="com/ch/member/dao/memberMapper.xml"/>
+  </mappers>
+</configuration> -->
+
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="JNDI">
+        <property name="initial_context" value="java:/comp/env"/>
+        <property name="data_source" value="jdbc/mvcDB"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <mapper resource="com/ch/member/dao/memberMapper.xml"/>
+    <mapper resource="com/ch/admin/dao/adminMapper.xml"/>
+  </mappers>
+</configuration>

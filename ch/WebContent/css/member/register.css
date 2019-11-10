@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.content{
+	
+	 position: absolute;
+	left: 50%;
+	margin-left: -250px;
+
+
+ 
+ }
+
+.ps_box{
+	position: relative;
+	width: 460px;
+	height: 51px;
+	border: solid 1px #dadada;
+	padding: 10px 14px 10px 14px;
+	box-sizing: border-box;
+	vertical-align: top;
+	
+	background-color: #FFFFFF;
+}
+
+input{
+	width: 334px;
+	height: 29px;
+ 	border: #FFFFFF;
+}
+
+.title{
+	margin: 19px 0 8px;
+	font-size: 14px;
+	font-weight: 700;
+}

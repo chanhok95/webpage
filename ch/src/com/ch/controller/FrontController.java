@@ -88,19 +88,34 @@ public class FrontController extends HttpServlet {
 		logger.info(logMsg+cmd);
 		
 		String view = null;
-		
 		try { 	//
 			CommandAction command = (CommandAction) commandMap.get(cmd); 
 			view = command.proRequest(request, response);
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
-		if (view != null) {		//
-			RequestDispatcher rd = request.getRequestDispatcher(view);
+//		if (view != null) {		//
+//			RequestDispatcher rd = request.getRequestDispatcher(view);
+//			rd.forward(request, response);
+//		}
+//	}
+		if (view != null) {
+			RequestDispatcher rd = null;
+			
+			if(view.equals("/WEB-INF/view/member/idCheck.jsp")) {
+				rd = request.getRequestDispatcher(view);
+			} else {
+				request.setAttribute("viewPage", view);
+				rd = request.getRequestDispatcher("/template/index.jsp");
+				
+			}
 			rd.forward(request, response);
 		}
+		
+		
 	}
 
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

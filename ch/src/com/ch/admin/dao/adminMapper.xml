@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ch.admin.dao.adminMapper">
+
+	<insert id="admininsert"
+		parameterType="com.ch.admin.dto.AdminDto">
+		insert into product values(product_num_seq.nextval,
+		#{name},
+		#{cateCode},
+		#{price},
+		#{stock},
+		#{des},
+		#{img},
+		#{registerDate}
+
+
+		)
+	</insert>
+
+	<select id="adminCount" resultType="int">
+		select count(*) from product
+
+	</select>
+
+	<select id="adminboardList" parameterType="java.util.Map"
+		resultType="com.ch.admin.dto.AdminDto">
+	<![CDATA[
+	select * from product 
+	]]>
+	</select>
+</mapper>

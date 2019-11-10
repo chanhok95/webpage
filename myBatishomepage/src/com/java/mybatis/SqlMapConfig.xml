@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- UNPOOL 풀안쓰는경우 -->
+<!-- UNPOOL 풀안쓰는경우 
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -21,6 +21,26 @@
     <mapper resource="com/java/fileboard/dao/fileboardMapper.xml"/>
     <mapper resource="com/java/guest//dao/guestMapper.xml"/>
   </mappers>
-</configuration>
+</configuration> -->
 
 <!-- POOL /Server Context.xml, Web.xml-->
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="JNDI">
+        <property name="initial_context" value="java:/comp/env"/>
+        <property name="data_source" value="jdbc/mvcDB"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <mapper resource="com/java/member/dao/memberMapper.xml"/>
+    <mapper resource="com/java/board/dao/BoardMapper.xml"/>
+    <mapper resource="com/java/guest/dao/guestMapper.xml"/>
+    <mapper resource="com/java/fileboard/dao/fileboardMapper.xml"/>
+  </mappers>
+</configuration>

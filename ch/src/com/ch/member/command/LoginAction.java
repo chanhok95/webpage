@@ -13,7 +13,7 @@ public class LoginAction implements CommandAction {
 		
 		
 		
-		return null;
+		return "/WEB-INF/view/member/login.jsp";
 	}
 
 }

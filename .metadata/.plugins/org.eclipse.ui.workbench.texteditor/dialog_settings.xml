@@ -6,9 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="String"/>
 		<list key="findhistory">
 			<item value="pds"/>
+			<item value="String"/>
+			<item value="hobby"/>
+			<item value="sub"/>
 			<item value="update"/>
 			<item value="getboard"/>
 			<item value="fileItem"/>
@@ -20,9 +23,6 @@
 			<item value="board"/>
 			<item value="reso"/>
 			<item value="resou"/>
-			<item value="resoue"/>
-			<item value="resouec"/>
-			<item value="resouece"/>
 		</list>
 		<list key="replacehistory">
 		</list>

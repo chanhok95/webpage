@@ -60,7 +60,7 @@ public class WriteOkActionMap implements CommandAction {
 					upload.setFileSizeMax(1024 * 1024 * 10); // 10메가 까지 받겠다
 					long size = fileItem.getSize(); // 파일사이즈
 
-					String dir = "F:\\ch\\MVC\\workspace\\homepage\\WebContent\\ftp"; // 경로
+					String dir = "F:\\ch\\MVC\\workspace\\myBatishomepage\\WebContent\\ftp"; // 경로
 					File file = new File(dir, fileName);
 					
 					fileItem.write(file);	//파일 입출력 (파일업로드 라이브러리를 이용해서 한줄로 가능) 
