@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JQuery Start</title>
+<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	var obj =new jQuery(document);
+	obj.ready(function(){	//콜백함수 - 시스템에서 불러오는  함수    ready  , 1. body태그 내부실행후  2.script실행 
+							//익명함수 - 이름이없는 한번사용하고 말 함수
+	
+		alert("jQuery 시작입니다.");
+		
+	});
+	
+	new jQuery(document).ready(function (){
+			alert("jQury 시작할까요?");
+		
+	});
+	
+	$(document).ready(function(){			//$(document) -> new jQuery(document) 로 함축가능
+		alert("jQery 함축");
+	});
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

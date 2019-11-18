@@ -55,7 +55,7 @@
 			<option></option>
 			<option value="https://www.naver.com">ㄴㅇㅂ</option>
 			<option value="https://www.daum.com">ㄷㅇ</option>
-			<option value="https://www.nate.com">ㄴㅇㅌ</option>
+			<option value="https://www.nate.com" >ㄴㅇㅌ</option>
 		</select>
 		<br></br>
 		

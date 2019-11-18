@@ -8,9 +8,9 @@
 <script type="text/javascript">
 var array = new Array();
 
-var firstSon =document.getElementById("firstSon");
-array.push(firstSon.childNodes[0].nodeValue);
-
+/*  var firstSon =document.getElementById("firstSon");
+ array.push(firstSon.childNodes.nodeValue);
+ */
 var father = document.getElementById("father");
 var fatherSon = father.getElementsByTagName("span");
 array.push(fatherSon[0].childNodes[0].nodeValue);
@@ -18,7 +18,7 @@ array.push(fatherSon[0].childNodes[0].nodeValue);
 var grandfather=document.getElementById("grandfather");
 var grandfatherDiv=grandfather.getElementsByTagName("div");
 var grandfatherSpan=grandfatherDiv[0].getElementsByTagName("span");
-array.push(grandfatherSpan[0].childNodes[0].nodeValue);
+array.push(grandfatherSpan[0].childNodes[0].nodeValue); 
 
 alert(array.join("\n"));
 

@@ -10,11 +10,11 @@ function sub() {
 	var array = new Array(); <%-- --%>
 	
 	var dauther = document.getElementById("dauther");
-	var olderBrother = dauther.previousElementSibling;
-	var younggerBrother = dauther.nextSibling;
+	var olderBrother = dauther.previousElementSibling;	// dauther이전 
+	var younggerBrother = dauther.nextSibling; // dauther 다음
 	
-	array.push(olderBrother.nodeType);
-	array.push(younggerBrother.nodeType);
+	array.push(olderBrother.nodeType); //1
+	array.push(younggerBrother.nodeType); //3
 	
 	alert(array.join("\n"));
 }

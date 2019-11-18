@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- UNPOOL 풀안쓰는경우 
+<!-- UNPOOL 풀안쓰는경우
+
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -10,8 +11,8 @@
       <dataSource type="UNPOOLED">
         <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
         <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
-        <property name="username" value="mvc"/>
-        <property name="password" value="1234"/>
+        <property name="username" value="hr"/>
+        <property name="password" value="hr"/>
       </dataSource>
     </environment>
   </environments>
@@ -19,11 +20,13 @@
     <mapper resource="com/java/member/dao/memberMapper.xml"/>
     <mapper resource="com/java/board/dao/BoardMapper.xml"/>
     <mapper resource="com/java/fileboard/dao/fileboardMapper.xml"/>
-    <mapper resource="com/java/guest//dao/guestMapper.xml"/>
+    <mapper resource="com/java/guest/dao/guestMapper.xml"/>
+    <mapper resource="com/java/sawon/SawonMapper.xml"/>
+      
   </mappers>
 </configuration> -->
 
-<!-- POOL /Server Context.xml, Web.xml-->
+<!-- POOL /Server Context.xml, Web.xml -->
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -42,5 +45,6 @@
     <mapper resource="com/java/board/dao/BoardMapper.xml"/>
     <mapper resource="com/java/guest/dao/guestMapper.xml"/>
     <mapper resource="com/java/fileboard/dao/fileboardMapper.xml"/>
+    <mapper resource="com/java/reply/dao/replyMapper.xml"/>
   </mappers>
-</configuration>
+</configuration> 

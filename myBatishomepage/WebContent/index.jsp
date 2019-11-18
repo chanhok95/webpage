@@ -36,8 +36,16 @@
 	<h3>파일게시판</h3>
 	<a href="${root }/fileboard/write.do">파일게시판 작성</a>
 	<a href="${root }/fileboard/list.do">파일게시판 목록보기</a>
-<!-- 	<h3>게시판</h3>
-	<h3>방명록</h3>
-	<h3>파일게시판</h3> -->
+	<br/><br/><br/><br/>
+	
+<%-- 	<h3>사원리스트 -hr 계정(UNPOOL설정)</h3>
+	<a href="${root }/sawon/list.do">사원리스트</a>
+	<br/><br/><br/><br/>
+	
+	<h3>실시간 댓글</h3>
+	<a href="${root }/reply/replyList.do">실시간 한줄 댓글</a> --%>
+	
+	
+
 </body>
 </html>
