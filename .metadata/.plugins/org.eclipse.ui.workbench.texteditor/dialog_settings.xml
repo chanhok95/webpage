@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="buho"/>
+		<item key="selection" value="boardList"/>
 		<list key="findhistory">
+			<item value="boardList"/>
+			<item value="get"/>
+			<item value="update"/>
 			<item value="oper"/>
 			<item value="number"/>
 			<item value="List"/>
@@ -18,11 +21,8 @@
 			<item value="String"/>
 			<item value="hobby"/>
 			<item value="sub"/>
-			<item value="update"/>
 			<item value="getboard"/>
 			<item value="fileItem"/>
-			<item value="read"/>
-			<item value="content"/>
 		</list>
 		<list key="replacehistory">
 			<item value="buho"/>

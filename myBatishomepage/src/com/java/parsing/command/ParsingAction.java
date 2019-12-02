@@ -14,7 +14,7 @@ public class ParsingAction implements CommandAction{
 		
 		
 		
-		return "/WEB-INF/view/parsing/pXML.jsp";
+		return "/WEB-INF/view/parsing/JqueryXML.jsp";
 	}
 
 }

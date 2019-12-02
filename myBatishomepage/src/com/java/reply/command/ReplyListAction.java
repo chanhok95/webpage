@@ -27,7 +27,8 @@ public class ReplyListAction implements CommandAction {
 		
 		request.setAttribute("replyList", replyList);
 		
-		return "/WEB-INF/view/reply/replyList.jsp";
+	return	"/WEB-INF/view/reply/jqueryReplyList.jsp";
+	//	return "/WEB-INF/view/reply/replyList.jsp";
 	}
 
 }

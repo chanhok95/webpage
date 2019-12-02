@@ -18,9 +18,9 @@ public class BoardDto {
 	private int sequenceLevel;
 	
 	public BoardDto() {}
-
 	
-
+	
+	
 	public BoardDto(int boardNumber, String writer, String subject, String email, String content, String password,
 			Date writeDate, int readCount, int groupNumber, int sequenceNumber, int sequenceLevel) {
 		super();

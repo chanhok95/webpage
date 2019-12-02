@@ -21,6 +21,8 @@ function checkForm(obj) { // obj =this=form
 		window.alert("좋아하는 과일을 선택하세요.");
 		return false;
 	}
+	
+	
 	var count = 0;
 	var str = "";
 	for (var i = 0; i < obj.interset.length; i++) {
@@ -34,6 +36,6 @@ function checkForm(obj) { // obj =this=form
 		return false;
 	}
 //	 window.alert(str);
-
+//	db에는 배열이없어서 ,로 구분해 문자열로 값을 입력
 	obj.result.value = str;
 }

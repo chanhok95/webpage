@@ -11,7 +11,20 @@
 <script type="text/javascript" src="../jquery-3.4.1.js"></script>
 <script type="text/javascript">
 $(document).ready(function (){
-	$("")
+	$("input[type='text']").val("값을 입력하세요.");
+	$("input[type='text']").attr("style","color:red");
+	
+	$("input[type='text']").click(function(){
+		$(this).val("");						//this->input중에 
+	});
+	
+	$("#btn").click(function (){
+	var email = $("input[name='email']").val();		//val,attr는 input태그에서만 데이터를 읽어오고 뽑아오는 까먹으면 안됨
+	var id = $("input[name='email']").attr("id");
+	
+	alert(email+"\n"+id);
+		
+	});
 	
 	
 });

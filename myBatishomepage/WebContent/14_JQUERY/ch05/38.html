@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery - DOM 필터 메소드</title>
+<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function (){
+		$("div:eq(0)").click(function (){
+		var str=$("div:eq(0)").text();
+			
+			$("#disp").html("<div>"+str+"</div>");
+			
+			
+		});
+		
+		//hover = mouseover + mouseout
+		$("div:eq(0)").mouseover(function (){
+			$("div:eq(0)").css("color","red");
+			
+			
+			
+		});
+		
+		$("div:eq(0)").mouseout(function (){
+			$("div:eq(0)").css("color","blue");
+			
+			
+		});
+		
+		//다수의 이벤트를 한번에 설정가능
+		$("div:eq(1)").bind({
+			mouseover: function(){
+				$("div:eq(1)").css("color","red");
+			},
+			
+			mouseout: function(){
+				$("div:eq(1)").css("color","blue");
+			},
+			click: function(){
+				alert("bind 함수");
+			}
+		});
+		
+	});
+	
+
+
+</script>
+</head>
+<body>
+	<div>안녕하세요</div>
+	<br/><br/>
+	
+	<div>반가워요</div>
+	<br/><br/>
+	
+	<div id="disp">안녕하세요.</div>
+</body>
+</html>

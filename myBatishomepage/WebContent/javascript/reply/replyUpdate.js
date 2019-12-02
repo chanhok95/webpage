@@ -2,11 +2,11 @@
  * 
  */
 
-function UpdateToServer(bunho,root){
+function UpdateToServer(bunho,value){
 	//alert(bunho + "," +root);
 	
 	var url = root + "/reply/update.do";
-	var params="bunho="+bunho;
+	var params="bunho="+bunho+"&lineReply="+value;
 	
 	sendRequest("GET",url,updateFromServer,params);
 

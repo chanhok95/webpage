@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	$("a").click(function (){
+		$("p").empty();
+		$("p").text("hi");
+		
+		$("p").remove();
+	});
+	
+
+});
+</script>
+</head>
+<body>
+	<a href="#">엘리먼트 비우기</a>
+	<div>
+		<p>사과</p>
+		바나나
+	</div>
+	
+	<p>
+	<span>딸기</span>
+	</p>
+	
+	<p>메론</p>
+</body>
+</html>
